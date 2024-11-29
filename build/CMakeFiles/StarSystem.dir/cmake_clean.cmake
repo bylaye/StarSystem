@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o"
+  "CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o.d"
   "CMakeFiles/StarSystem.dir/src/main.cpp.o"
   "CMakeFiles/StarSystem.dir/src/main.cpp.o.d"
   "StarSystem"
