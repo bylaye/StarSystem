@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/StarSystem.dir/src/main.cpp.o CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o -o StarSystem  /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1 
+/usr/bin/c++ CMakeFiles/StarSystem.dir/src/main.cpp.o CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o CMakeFiles/StarSystem.dir/src/Stellar.cpp.o -o StarSystem  /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1 

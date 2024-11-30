@@ -4,7 +4,7 @@ project(StarSystem)
 
 find_package(SFML 2.6 REQUIRED COMPONENTS graphics window system)
 
-set(SOURCES src/main.cpp src/SystemMap.cpp)
+set(SOURCES src/main.cpp src/SystemMap.cpp src/Stellar.cpp)
 
 include_directories(include)
 

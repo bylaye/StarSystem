@@ -129,6 +129,30 @@ StarSystem/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarSystem.dir/build.make CMakeFiles/StarSystem.dir/build
 .PHONY : StarSystem/fast
 
+src/Stellar.o: src/Stellar.cpp.o
+.PHONY : src/Stellar.o
+
+# target to build an object file
+src/Stellar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarSystem.dir/build.make CMakeFiles/StarSystem.dir/src/Stellar.cpp.o
+.PHONY : src/Stellar.cpp.o
+
+src/Stellar.i: src/Stellar.cpp.i
+.PHONY : src/Stellar.i
+
+# target to preprocess a source file
+src/Stellar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarSystem.dir/build.make CMakeFiles/StarSystem.dir/src/Stellar.cpp.i
+.PHONY : src/Stellar.cpp.i
+
+src/Stellar.s: src/Stellar.cpp.s
+.PHONY : src/Stellar.s
+
+# target to generate assembly for a file
+src/Stellar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StarSystem.dir/build.make CMakeFiles/StarSystem.dir/src/Stellar.cpp.s
+.PHONY : src/Stellar.cpp.s
+
 src/SystemMap.o: src/SystemMap.cpp.o
 .PHONY : src/SystemMap.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... StarSystem"
+	@echo "... src/Stellar.o"
+	@echo "... src/Stellar.i"
+	@echo "... src/Stellar.s"
 	@echo "... src/SystemMap.o"
 	@echo "... src/SystemMap.i"
 	@echo "... src/SystemMap.s"
