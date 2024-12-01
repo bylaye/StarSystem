@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <string>
+#include <math.h>
 
 class Stellar {
 private:
@@ -14,6 +15,11 @@ private:
     sf::Color color;
     std::string name;
     sf::CircleShape shape;
+    float orbitalAngle;
+    float orbitalSpeed;
+    float orbitalRadius;
+    sf::Vector2f orbitCenter;
+
 
 public:
     Stellar(const std::string& name, const sf::Vector2f& position, 
@@ -32,6 +38,9 @@ public:
 
     void update(float timestep);
     void draw(sf::RenderWindow& window);
+
+    void setOrbit(const sf::Vector2f& center, float radius, float speed);
+    void updateOrbit(float timestep);
 };
 
 #endif
