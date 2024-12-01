@@ -29,7 +29,8 @@ int main() {
     SystemMap map(window, mapWidth, mapHeight, scale);
 
     Stellar sun("Sun", sf::Vector2f(mapWidth/2, mapHeight/2), 1.0e30, 50.f, sf::Color::Yellow);
-    Stellar earth("Earth", sf::Vector2f(mapWidth/2 + 50, mapHeight/2), 1.0e30, 20.f, sf::Color(0, 100, 255, 90));
+    Stellar earth("Earth", sf::Vector2f(mapWidth/2 + 50, mapHeight/2), 1.0e30, 10.f, sf::Color(0, 100, 255, 90));
+    earth.setOrbit(sun.getPosition(), 150.f, 1.f);
 
     sf::Clock clock;
     float timestep = clock.restart().asSeconds();
@@ -43,20 +44,23 @@ int main() {
                 window.close();
             }
         }
+
+        float timestep = clock.restart().asSeconds();
         sun.update(timestep);
+        earth.updateOrbit(timestep);
 
         window.clear(sf::Color::Black);
         
         sun.draw(window);
 
-        drawInclinedOrbit(window, sun.getPosition(), 100.f, 40.f, 180.f, sf::Color(255, 155, 0, 100));
-        drawInclinedOrbit(window, sun.getPosition(), 120.f, 60.f, 180.f, sf::Color(255, 155, 0, 100));
+        // drawInclinedOrbit(window, sun.getPosition(), 100.f, 40.f, 180.f, sf::Color(255, 155, 0, 100));
+        // drawInclinedOrbit(window, sun.getPosition(), 120.f, 60.f, 180.f, sf::Color(255, 155, 0, 100));
         drawInclinedOrbit(window, sun.getPosition(), 150.f, 70.f, 180.f, sf::Color(255, 155, 0, 100));
-        drawInclinedOrbit(window, sun.getPosition(), 190.f, 80.f, 180.f, sf::Color(255, 155, 0, 100));
-        drawInclinedOrbit(window, sun.getPosition(), 230.f, 90.f, 180.f, sf::Color(255, 155, 0, 100));
-        drawInclinedOrbit(window, sun.getPosition(), 260.f, 100.f, 180.f, sf::Color(255, 155, 0, 100));
-        drawInclinedOrbit(window, sun.getPosition(), 300.f, 110.f, 180.f, sf::Color(255, 155, 0, 100));
-        drawInclinedOrbit(window, sun.getPosition(), 350.f, 140.f, 180.f, sf::Color(255, 155, 0, 100));
+        // drawInclinedOrbit(window, sun.getPosition(), 190.f, 80.f, 180.f, sf::Color(255, 155, 0, 100));
+        // drawInclinedOrbit(window, sun.getPosition(), 230.f, 90.f, 180.f, sf::Color(255, 155, 0, 100));
+        // drawInclinedOrbit(window, sun.getPosition(), 260.f, 100.f, 180.f, sf::Color(255, 155, 0, 100));
+        // drawInclinedOrbit(window, sun.getPosition(), 300.f, 110.f, 180.f, sf::Color(255, 155, 0, 100));
+        // drawInclinedOrbit(window, sun.getPosition(), 350.f, 140.f, 180.f, sf::Color(255, 155, 0, 100));
         //sun.draw(window);
         map.draw();
         earth.draw(window);
