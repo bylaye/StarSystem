@@ -18,6 +18,8 @@ private:
     float orbitalAngle;
     float orbitalSpeed;
     float orbitalRadius;
+    float orbitalSemiMinorAxis;
+    float orbitalSemiMajorAxis;
     sf::Vector2f orbitCenter;
 
 
@@ -30,6 +32,8 @@ public:
     const sf::Vector2f& getVelocity() const;
     float getMass() const;
     float getRadius() const;
+    float getOrbitalSemiMinorAxis() const;
+    float getOrbitalSemiMajorAxis() const ;
     const std::string& getName() const;
 
     void setPosition(const sf::Vector2f& newPosition);
@@ -39,8 +43,11 @@ public:
     void update(float timestep);
     void draw(sf::RenderWindow& window);
 
-    void setOrbit(const sf::Vector2f& center, float radius, float speed);
-    void updateOrbit(float timestep);
+    void setOrbit(const sf::Vector2f& center, 
+                float orbitalSemiMinorAxis, float orbitalSemiMajorAxis, 
+                float speed
+            );
+    void updateOrbit(float timestep, float orbitalSemiMinorAxis, float orbitalSemiMajorAxis);
 };
 
 #endif

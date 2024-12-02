@@ -1,4 +1,5 @@
 #include <Stellar.hpp>
+#include <iostream>
 
 Stellar::Stellar(const std::string& name, const sf::Vector2f& position, 
                 float mass, float radius, const sf::Color& color)
@@ -30,6 +31,14 @@ float Stellar::getRadius() const {
 
 const std::string& Stellar::getName() const {
     return name;
+}
+
+float Stellar::getOrbitalSemiMinorAxis() const {
+    return orbitalSemiMinorAxis;
+}
+
+float Stellar::getOrbitalSemiMajorAxis() const {
+    return orbitalSemiMajorAxis;
 }
 
 // Setters
@@ -69,29 +78,27 @@ void Stellar::draw(sf::RenderWindow& window) {
 }
 
 
-void Stellar::setOrbit(const sf::Vector2f& center, float radius, float speed) {
+void Stellar::setOrbit(const sf::Vector2f& center, float semiMinorAxis, float semiMajorAxis, float speed) {
     orbitCenter = center;       // Centre de l'orbite (Soleil)
-    orbitalRadius = radius;     // Rayon de l'orbite
+    orbitalSemiMajorAxis = semiMajorAxis;
+    orbitalSemiMinorAxis = semiMinorAxis;
     orbitalSpeed = speed;       // Vitesse angulaire
     orbitalAngle = 0.f;         // Angle initial
 }
 
 
-void Stellar::updateOrbit(float timestep) {
+void Stellar::updateOrbit(float timestep, float orbitalSemiMinorAxis, float orbitalSemiMajorAxis) {
     // Mettre à jour l'angle orbital
     orbitalAngle += orbitalSpeed * timestep;
-
+    std::cout << "orbit angle" << orbitalAngle << std::endl;
     // Garder l'angle entre 0 et 2*PI pour éviter un débordement
-    if (orbitalAngle > 2 * M_PI) {
-        orbitalAngle -= 2 * M_PI;
-    }
+    //if (orbitalAngle > 2 * M_PI) {
+    //    orbitalAngle -= 2 * M_PI;
+    //}
 
     // Calculer la nouvelle position sur l'orbite circulaire
-    //float x = orbitalRadius * std::cos(orbitalAngle);
-    //float y = orbitalRadius * std::sin(orbitalAngle);
-
-    float x = 150 * std::cos(orbitalAngle);
-    float y = 70 * std::sin(orbitalAngle);
+    float x = orbitalSemiMajorAxis * std::cos(orbitalAngle);
+    float y = orbitalSemiMinorAxis * std::sin(orbitalAngle);
 
     // Ajuster la position par rapport au centre de l'orbite
     setPosition(orbitCenter + sf::Vector2f(x, y));
