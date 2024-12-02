@@ -7,6 +7,7 @@
 
 class Stellar {
 private:
+    sf::CircleShape shape;
     sf::Vector2f position;
     sf::Vector2f velocity;
     sf::Vector2f acceleration;
@@ -14,13 +15,13 @@ private:
     float radius;
     sf::Color color;
     std::string name;
-    sf::CircleShape shape;
     float orbitalAngle;
     float orbitalSpeed;
     float orbitalRadius;
     float orbitalSemiMinorAxis;
     float orbitalSemiMajorAxis;
     sf::Vector2f orbitCenter;
+    int countEvolution;
 
 
 public:
@@ -34,11 +35,13 @@ public:
     float getRadius() const;
     float getOrbitalSemiMinorAxis() const;
     float getOrbitalSemiMajorAxis() const ;
-    const std::string& getName() const;
+    const std::string getName() const;
+    int getCountEvolution() const;
 
     void setPosition(const sf::Vector2f& newPosition);
     void setVelocity(const sf::Vector2f& newVelocity);
     void applyForce(const sf::Vector2f& force);
+    void setCountEvolution(int iter);
 
     void update(float timestep);
     void draw(sf::RenderWindow& window);

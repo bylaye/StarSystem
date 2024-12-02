@@ -10,6 +10,7 @@ Stellar::Stellar(const std::string& name, const sf::Vector2f& position,
     shape.setFillColor(color);
     shape.setOrigin(radius, radius);
     shape.setPosition(position.x, position.y);
+    
 }
 
 // Getters
@@ -29,7 +30,7 @@ float Stellar::getRadius() const {
     return radius;
 }
 
-const std::string& Stellar::getName() const {
+const std::string Stellar::getName() const {
     return name;
 }
 
@@ -39,6 +40,14 @@ float Stellar::getOrbitalSemiMinorAxis() const {
 
 float Stellar::getOrbitalSemiMajorAxis() const {
     return orbitalSemiMajorAxis;
+}
+
+int Stellar::getCountEvolution() const {
+    return countEvolution;
+}
+
+void Stellar::setCountEvolution( int additer){
+    countEvolution += additer;
 }
 
 // Setters
@@ -90,15 +99,16 @@ void Stellar::setOrbit(const sf::Vector2f& center, float semiMinorAxis, float se
 void Stellar::updateOrbit(float timestep, float orbitalSemiMinorAxis, float orbitalSemiMajorAxis) {
     // Mettre à jour l'angle orbital
     orbitalAngle += orbitalSpeed * timestep;
-    std::cout << "orbit angle" << orbitalAngle << std::endl;
+    //std::cout << "orbit angle" << orbitalAngle << std::endl;
     // Garder l'angle entre 0 et 2*PI pour éviter un débordement
-    //if (orbitalAngle > 2 * M_PI) {
-    //    orbitalAngle -= 2 * M_PI;
-    //}
+    if (orbitalAngle >= 2 * M_PI) {
+        orbitalAngle -= 2 * M_PI;
+        countEvolution += 1;
+    }
 
     // Calculer la nouvelle position sur l'orbite circulaire
     float x = orbitalSemiMajorAxis * std::cos(orbitalAngle);
-    float y = orbitalSemiMinorAxis * std::sin(orbitalAngle);
+    float y = orbitalSemiMinorAxis * std::sin(orbitalAngle);        
 
     // Ajuster la position par rapport au centre de l'orbite
     setPosition(orbitCenter + sf::Vector2f(x, y));
