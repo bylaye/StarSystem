@@ -108,6 +108,7 @@ CMakeFiles/StarSystem.dir/src/Stellar.cpp.o: /home/aniang/DSTI/StarSystem/src/St
   /usr/include/c++/13/bits/hash_bytes.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/istream.tcc \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
   /usr/include/c++/13/bits/locale_conv.h \
@@ -180,6 +181,8 @@ CMakeFiles/StarSystem.dir/src/Stellar.cpp.o: /home/aniang/DSTI/StarSystem/src/St
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
+  /usr/include/c++/13/istream \
   /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/locale \
@@ -1047,6 +1050,8 @@ CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/DSTI/StarSystem/src/main.
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
 /usr/include/c++/13/bits/predefined_ops.h:
 
 /usr/include/c++/13/iosfwd:
@@ -1066,8 +1071,6 @@ CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/DSTI/StarSystem/src/main.
 /usr/include/c++/13/bits/locale_facets_nonio.h:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/c++/13/bits/locale_conv.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -1098,6 +1101,10 @@ CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/DSTI/StarSystem/src/main.
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/c++/13/bits/istream.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
@@ -1154,6 +1161,12 @@ CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/DSTI/StarSystem/src/main.
 /usr/include/alloca.h:
 
 /usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/time.h:
 
 /usr/include/SFML/Window/WindowStyle.hpp:
 
@@ -1291,8 +1304,6 @@ CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/DSTI/StarSystem/src/main.
 
 /usr/include/c++/13/cerrno:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
 /usr/include/SFML/System/Export.hpp:
 
 /usr/include/SFML/System/Thread.hpp:
@@ -1399,6 +1410,8 @@ CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/DSTI/StarSystem/src/main.
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
+/usr/include/c++/13/istream:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/SFML/Graphics/PrimitiveType.hpp:
@@ -1428,6 +1441,8 @@ CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/DSTI/StarSystem/src/main.
 /usr/include/c++/13/cstdio:
 
 /usr/include/SFML/System/Vector2.hpp:
+
+/usr/include/c++/13/iostream:
 
 /usr/include/c++/13/bits/refwrap.h:
 
@@ -1608,9 +1623,3 @@ CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/DSTI/StarSystem/src/main.
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
