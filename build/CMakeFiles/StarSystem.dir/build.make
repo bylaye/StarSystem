@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aniang/DSTI/StarSystem
+CMAKE_SOURCE_DIR = /home/aniang/Labs/StarSystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aniang/DSTI/StarSystem/build
+CMAKE_BINARY_DIR = /home/aniang/Labs/StarSystem/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/StarSystem.dir/depend.make
@@ -70,46 +70,46 @@ include CMakeFiles/StarSystem.dir/progress.make
 include CMakeFiles/StarSystem.dir/flags.make
 
 CMakeFiles/StarSystem.dir/src/main.cpp.o: CMakeFiles/StarSystem.dir/flags.make
-CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/DSTI/StarSystem/src/main.cpp
+CMakeFiles/StarSystem.dir/src/main.cpp.o: /home/aniang/Labs/StarSystem/src/main.cpp
 CMakeFiles/StarSystem.dir/src/main.cpp.o: CMakeFiles/StarSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aniang/DSTI/StarSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StarSystem.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarSystem.dir/src/main.cpp.o -MF CMakeFiles/StarSystem.dir/src/main.cpp.o.d -o CMakeFiles/StarSystem.dir/src/main.cpp.o -c /home/aniang/DSTI/StarSystem/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aniang/Labs/StarSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/StarSystem.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarSystem.dir/src/main.cpp.o -MF CMakeFiles/StarSystem.dir/src/main.cpp.o.d -o CMakeFiles/StarSystem.dir/src/main.cpp.o -c /home/aniang/Labs/StarSystem/src/main.cpp
 
 CMakeFiles/StarSystem.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StarSystem.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aniang/DSTI/StarSystem/src/main.cpp > CMakeFiles/StarSystem.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aniang/Labs/StarSystem/src/main.cpp > CMakeFiles/StarSystem.dir/src/main.cpp.i
 
 CMakeFiles/StarSystem.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StarSystem.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aniang/DSTI/StarSystem/src/main.cpp -o CMakeFiles/StarSystem.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aniang/Labs/StarSystem/src/main.cpp -o CMakeFiles/StarSystem.dir/src/main.cpp.s
 
 CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o: CMakeFiles/StarSystem.dir/flags.make
-CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o: /home/aniang/DSTI/StarSystem/src/SystemMap.cpp
+CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o: /home/aniang/Labs/StarSystem/src/SystemMap.cpp
 CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o: CMakeFiles/StarSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aniang/DSTI/StarSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o -MF CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o.d -o CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o -c /home/aniang/DSTI/StarSystem/src/SystemMap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aniang/Labs/StarSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o -MF CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o.d -o CMakeFiles/StarSystem.dir/src/SystemMap.cpp.o -c /home/aniang/Labs/StarSystem/src/SystemMap.cpp
 
 CMakeFiles/StarSystem.dir/src/SystemMap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StarSystem.dir/src/SystemMap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aniang/DSTI/StarSystem/src/SystemMap.cpp > CMakeFiles/StarSystem.dir/src/SystemMap.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aniang/Labs/StarSystem/src/SystemMap.cpp > CMakeFiles/StarSystem.dir/src/SystemMap.cpp.i
 
 CMakeFiles/StarSystem.dir/src/SystemMap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StarSystem.dir/src/SystemMap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aniang/DSTI/StarSystem/src/SystemMap.cpp -o CMakeFiles/StarSystem.dir/src/SystemMap.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aniang/Labs/StarSystem/src/SystemMap.cpp -o CMakeFiles/StarSystem.dir/src/SystemMap.cpp.s
 
 CMakeFiles/StarSystem.dir/src/Stellar.cpp.o: CMakeFiles/StarSystem.dir/flags.make
-CMakeFiles/StarSystem.dir/src/Stellar.cpp.o: /home/aniang/DSTI/StarSystem/src/Stellar.cpp
+CMakeFiles/StarSystem.dir/src/Stellar.cpp.o: /home/aniang/Labs/StarSystem/src/Stellar.cpp
 CMakeFiles/StarSystem.dir/src/Stellar.cpp.o: CMakeFiles/StarSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aniang/DSTI/StarSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/StarSystem.dir/src/Stellar.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarSystem.dir/src/Stellar.cpp.o -MF CMakeFiles/StarSystem.dir/src/Stellar.cpp.o.d -o CMakeFiles/StarSystem.dir/src/Stellar.cpp.o -c /home/aniang/DSTI/StarSystem/src/Stellar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aniang/Labs/StarSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/StarSystem.dir/src/Stellar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StarSystem.dir/src/Stellar.cpp.o -MF CMakeFiles/StarSystem.dir/src/Stellar.cpp.o.d -o CMakeFiles/StarSystem.dir/src/Stellar.cpp.o -c /home/aniang/Labs/StarSystem/src/Stellar.cpp
 
 CMakeFiles/StarSystem.dir/src/Stellar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StarSystem.dir/src/Stellar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aniang/DSTI/StarSystem/src/Stellar.cpp > CMakeFiles/StarSystem.dir/src/Stellar.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aniang/Labs/StarSystem/src/Stellar.cpp > CMakeFiles/StarSystem.dir/src/Stellar.cpp.i
 
 CMakeFiles/StarSystem.dir/src/Stellar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StarSystem.dir/src/Stellar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aniang/DSTI/StarSystem/src/Stellar.cpp -o CMakeFiles/StarSystem.dir/src/Stellar.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aniang/Labs/StarSystem/src/Stellar.cpp -o CMakeFiles/StarSystem.dir/src/Stellar.cpp.s
 
 # Object files for target StarSystem
 StarSystem_OBJECTS = \
@@ -128,7 +128,7 @@ StarSystem: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.6.1
 StarSystem: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.6.1
 StarSystem: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.6.1
 StarSystem: CMakeFiles/StarSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aniang/DSTI/StarSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable StarSystem"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aniang/Labs/StarSystem/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable StarSystem"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StarSystem.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -140,6 +140,6 @@ CMakeFiles/StarSystem.dir/clean:
 .PHONY : CMakeFiles/StarSystem.dir/clean
 
 CMakeFiles/StarSystem.dir/depend:
-	cd /home/aniang/DSTI/StarSystem/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aniang/DSTI/StarSystem /home/aniang/DSTI/StarSystem /home/aniang/DSTI/StarSystem/build /home/aniang/DSTI/StarSystem/build /home/aniang/DSTI/StarSystem/build/CMakeFiles/StarSystem.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aniang/Labs/StarSystem/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aniang/Labs/StarSystem /home/aniang/Labs/StarSystem /home/aniang/Labs/StarSystem/build /home/aniang/Labs/StarSystem/build /home/aniang/Labs/StarSystem/build/CMakeFiles/StarSystem.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/StarSystem.dir/depend
 

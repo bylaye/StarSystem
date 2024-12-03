@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/aniang/DSTI/StarSystem/include
+CXX_INCLUDES = -I/home/aniang/Labs/StarSystem/include
 
 CXX_FLAGS = 
 
