@@ -1,3 +1,0 @@
-/home/aniang/Labs/StarSystem/build/CMakeFiles/StarSystem.dir
-/home/aniang/Labs/StarSystem/build/CMakeFiles/edit_cache.dir
-/home/aniang/Labs/StarSystem/build/CMakeFiles/rebuild_cache.dir
